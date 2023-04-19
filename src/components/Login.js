@@ -38,12 +38,8 @@ const Login = () => {
         });
         }
         else{
-          swal({
-            title:"Wrong Password",
-            icon:"error",
-            buttons:false,
-            timer:3000
-          });
+        navigate('/login.js');
+          
         }
       })
     } catch (error) {
